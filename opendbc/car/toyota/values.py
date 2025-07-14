@@ -347,6 +347,15 @@ class CAR(Platforms):
     ],
     LEXUS_NX.specs,
   )
+  LEXUS_LC = PlatformConfig(
+    [ToyotaCarDocs("Lexus LC 2018-23", "Performance Package with Rear Wheel Steering")],
+    CarSpecs(mass=4280. * CV.LB_TO_KG, wheelbase=2.87, steerRatio=13.0, tireStiffnessFactor=0.444),
+    dbc_dict('lexus_lc_dhp_generated', 'toyota_adas'),
+  )
+  LEXUS_LC_TSS2 = ToyotaTSS2PlatformConfig(
+    [ToyotaCarDocs("Lexus LC 2024-25")],
+    CarSpecs(mass=4500. * CV.LB_TO_KG, wheelbase=2.87, steerRatio=13.0, tireStiffnessFactor=0.444),
+  )
   LEXUS_LC_TSS2 = ToyotaTSS2PlatformConfig(
     [ToyotaCarDocs("Lexus LC 2024")],
     CarSpecs(mass=4500. * CV.LB_TO_KG, wheelbase=2.87, steerRatio=13.0, tireStiffnessFactor=0.444),
